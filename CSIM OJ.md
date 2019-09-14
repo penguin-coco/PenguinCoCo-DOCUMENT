@@ -386,16 +386,16 @@ ProblemBank
 
 10. 管理員api (admin)
 
-    | API Method | API URL                  | Desc         | Req Params                   | Resp Result                   |
-    | ---------- | ------------------------ | ------------ | ---------------------------- | ----------------------------- |
-    | GET        | URL/admin/teacherList    | 取得老師名單 |                              | [{account, name}]             |
-    | GET        | URL/admin/taList         | 取得助教名單 |                              | [{account, name}]             |
-    | GET        | URL/admin/classList      | 取得所有班級 |                              | [{className, classSize(int)}] |
-    | GET        | URL/admin/studentList    | 取得學生名單 | className                    | [{account, name}]             |
-    | POST       | URL/admin/addTeacherList | 新增老師名單 | [{account, name}]            |                               |
-    | POST       | URL/admin/addTAList      | 新增助教名單 | [{account, name}]            |                               |
-    | POST       | URL/admin/newClass       | 新增班級     | className                    |                               |
-    | POST       | URL/admin/addStudentList | 新增同學名單 | [{className, account, name}] |                               |
+    | API Method | API URL                  | Desc                   | Req Params                   | Resp Result                   |
+    | ---------- | ------------------------ | ---------------------- | ---------------------------- | ----------------------------- |
+    | GET        | URL/admin/teacherList    | 取得老師名單           |                              | [{account, name}]             |
+    | GET        | URL/admin/taList         | 取得助教名單           |                              | [{account, name}]             |
+    | GET        | URL/admin/classList      | 取得所有班級           |                              | [{className, classSize(int)}] |
+    | GET        | URL/admin/studentList    | 取得學生名單           | className                    | [{account, name}]             |
+    | POST       | URL/admin/addTeacherList | 新增老師名單           | [{account, name}]            |                               |
+    | POST       | URL/admin/addTAList      | 新增助教名單           | [{account, name}]            |                               |
+    | POST       | URL/admin/addStudentList | 新增同學名單           | [{className, account, name}] |                               |
+    | POST       | URL/admin/delList        | 刪除老師/助教/同學名單 | {auth, account:[]}           |                               |
 
 11. 數據api (data)(待做)
 
